@@ -19,7 +19,7 @@ jobs:
       - name: Fetch GitHub meta
         run: |
           echo "Fetching GitHub IP ranges..."
-          curl -s https://api.github.com/meta > github-ips.json
+          curl -s https://api.github.com/meta | jq . > github-ips.json
 
       - name: Commit changes
         run: |
