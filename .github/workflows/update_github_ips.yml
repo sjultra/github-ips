@@ -39,6 +39,7 @@ jobs:
 
           # Stage changes
           git add github-ips.json
+          git add github-hooks-ips.json
 
           # If there's nothing new to commit, don't fail
           git commit -m "Update GitHub IP ranges [skip ci]" || echo "No changes to commit"
