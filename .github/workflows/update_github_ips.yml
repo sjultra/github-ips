@@ -1,3 +1,6 @@
+# Fetches the GitHub IP ranges and updates the whitelist in the repo.
+# Runs daily at 00:00 UTC or manual dispatch; output is committed to the repo.
+
 name: "Update GitHub IP Whitelist"
 
 on:
